@@ -20,7 +20,7 @@ body {
 
 /* HERO SECTION / BERANDA */
 .beranda-id {
-    background-image: url(gambar/background.jpg);
+    background-image: url(background.jpg);
     height: 900px;
     background-size: cover;
     background-position: center;
