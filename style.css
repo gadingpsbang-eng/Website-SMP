@@ -1,0 +1,366 @@
+body {
+     font-weight: bold;
+}
+
+/* NAVBAR */
+.navbar-brand img {
+    object-fit: cover;
+    border: 3px solid white;
+}
+
+.navbar-nav .nav-link {
+    font-size: 17px;
+    font-weight: 500;
+    margin-left: 12px;
+}
+
+.navbar-nav .nav-link:hover {
+    color: #0dcaf0 !important;
+}
+
+/* HERO SECTION / BERANDA */
+.beranda-id {
+    background-image: url(gambar/background.jpg);
+    height: 900px;
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    padding: 60px 30px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+
+.beranda-id h1 {
+    color: white;
+    font-size: 60px;
+    font-weight: 700;
+    max-width: 700px;
+}
+
+.beranda-id p {
+    color: white;
+    font-size: 20px;
+    font-weight: 400;
+    max-width: 600px;
+}
+
+/* ALBUM */
+.album-id {
+    background-color: #f8f9fa;
+    padding: 60px 0;
+    margin-top: 110px;
+}
+
+.album-id h2 {
+    text-align: center;
+    font-size: 36px;
+    font-weight: 700;
+    margin-bottom: 40px;
+}
+
+.card-id { 
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+    gap: 20px;
+}
+
+.id-card {
+    padding: 20px;
+    background-color: rgb(209, 216, 224);
+    border-radius: 10px;
+    transition: 0.3s;
+}
+
+.id-card:hover {
+    transform: scale(1.03);
+}
+
+.id-card img {
+    width: 100%;
+    height: 230px;
+    object-fit: cover;
+    border-radius: 20px;
+}
+
+/* TENTANG */
+.tentang-id {
+    padding: 60px 30px;
+    margin-top: 110px;
+}
+
+.tentang-id h2 {
+    text-align: center;
+    font-size: 36px;
+    font-weight: 700;
+    margin-bottom: 40px;
+}
+
+.text-id {
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
+    gap: 20px;
+}
+
+.text-id p {
+    font-size: 18px;
+    line-height: 1.6;
+    text-align: justify;
+    max-width: 600px;
+}
+
+.text-id img {
+    width: 400%;
+    height: 430px;
+    object-fit: cover;
+    border-radius: 40px;
+    box-shadow: 30px 30px 50px rgba(0, 0, 0, 0.10);
+    transition: 0.3s;
+}
+
+.text-id img:hover {
+    transform: scale(1.03);
+}
+
+
+/* ============================
+      RESPONSIVE MOBILE
+============================ */
+@media(max-width: 992px) {
+    .beranda-id h1 {
+        font-size: 45px;
+    }
+    .beranda-id p {
+        font-size: 18px;
+    }
+
+    .text-id {
+        flex-direction: column;
+        text-align: center;
+    }
+
+    .text-id img {
+        width: 100%;
+        height: auto;
+    }
+}
+
+@media(max-width: 576px) {
+    .beranda-id {
+        padding: 40px 20px;
+        height: 700px;
+        text-align: center;
+    }
+
+    .beranda-id h1 {
+        font-size: 35px;
+    }
+
+    .beranda-id p {
+        font-size: 16px;
+    }
+}
+
+.text-cewek {
+    display: flex;
+    justify-content: flex-end;
+    align-items: center;
+    flex-direction: row-reverse;
+    gap: 20px;
+}
+
+.text-cewek img {
+    width: 400%;
+    height: 430px;
+    object-fit: cover;
+    border-radius: 20px;
+    box-shadow: 30px 30px 50px rgba(0, 0, 0, 0.10);
+    transition: 0.3s;
+}
+.text-cewek img:hover {
+    transform: scale(1.03);
+}
+
+.text-cahaya {
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
+    gap: 20px;
+}
+
+
+
+.text-cahaya img {
+    width:500px;
+    height: 500px;
+    object-fit: cover;
+    border-radius: 10px;
+    box-shadow: 30px 30px 50px rgba(0, 0, 0, 0.10);
+    transition: 0.3s;
+}
+
+.text-cahaya img:hover {
+    transform: scale(1.03);
+}
+
+.video {
+    margin-top: 110px;
+    text-align: center;
+
+}
+
+.video h2 {
+     font-weight: bold;
+}
+
+.video video {
+    margin-top: 10px;
+    width: 30%;
+    height: 10%;
+    border-radius: 20px;
+    box-shadow: 30px 30px 50px rgba(0, 0, 0, 0.10);
+}
+
+
+/* ============================
+      RESPONSIVE MOBILE 
+============================ */
+@media(max-width: 992px) {      
+    .text-cewek {
+        flex-direction: column;
+        text-align: center;
+    }
+
+    .text-cewek img {
+        width: 100%;
+        height: auto;
+    }
+
+    .text-cahaya {
+        flex-direction: column;
+        text-align: center;
+    }
+
+    .text-cahaya img {
+        width: 100%;
+        height: auto;
+    }
+
+    .video video {
+        width: 80%;
+        height: auto;
+    }
+}
+
+.kenangan {
+    margin-top: 120px;
+    text-align: center;
+    padding: 0 20px;
+}
+
+.kenangan h2 {
+     font-weight: bold;
+}
+
+.kenangan img {
+    margin-top: 10px;
+    width: 40%;
+    height: auto;
+    border-radius: 20px;
+    box-shadow: 30px 30px 50px rgba(0, 0, 0, 0.10);
+}
+
+/* GRID CARD */
+.card-kenangan {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+    gap: 20px;
+    margin-top: 30px;
+}
+
+.card-kenangan img {
+    width: 100%;
+    height: 330px;
+    object-fit: cover; 
+    border-radius: 20px;
+    transition: 0.3s;
+}
+
+.card-kenangan img:hover {
+    transform: scale(1.03);
+}
+
+.id-kenangan h2 {
+    margin-top: 200px;
+}
+
+/* ================= RESPONSIVE ================= */
+
+/* TABLET */
+@media (max-width: 768px) {
+    .kenangan {
+        margin-top: 80px;
+    }
+
+    .kenangan img {
+        width: 70%;
+    }
+
+    .id-kenangan h2 {
+        margin-top: 120px;
+    }
+
+    .card-kenangan img {
+        height: 260px;
+    }
+}
+
+/* MOBILE */
+@media (max-width: 480px) {
+    .kenangan {
+        margin-top: 60px;
+    }
+
+    .kenangan img {
+        width: 100%;
+    }
+
+    .id-kenangan h2 {
+        margin-top: 80px;
+        font-size: 22px;
+    }
+
+    .card-kenangan {
+        grid-template-columns: 1fr;
+    }
+
+    .card-kenangan img {
+        height: 220px;
+    }
+}
+
+.ledis-kayla { 
+    margin-top: 120px;
+    padding: 60px;
+}
+
+.kayla-ledis {
+     display: flex;
+     justify-content: center;
+     align-items: center;
+     gap: 50px;
+}
+
+.kayla-ledis  img {
+     width: 520px;
+     object-fit: cover;
+     height: 495px;
+     border-radius: 20px;   
+     box-shadow: 10px 10px 20px black;
+     transition: 0.3s;
+}
+
+.kayla-ledis img:hover {
+    transform: scale(1.03);
+}
